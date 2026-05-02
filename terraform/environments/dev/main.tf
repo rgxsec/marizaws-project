@@ -20,4 +20,12 @@ module "compute" {
   source = "../../modules/compute"
   private_subnet_id = module.vpc.private_subnet_id
   private_sg_id = module.security.private_sg_id
+  key_name = module.security.key_name
+  target_group_arn = module.security.target_group_arn
+}
+
+
+module "monitoring" {
+  source = "../../modules/monitoring"
+  vpc_id = module.vpc.vpc_id 
 }
