@@ -10,7 +10,7 @@ resource "aws_db_instance" "marizaws_db" {
     deletion_protection = false
     backup_retention_period = 0
     username = "admin"
-    password = "changeme123#@?MariZ09!dnp"  # intentional bad practice for demo
+    password = "changeme321#@?MariZ09!dnp"  # intentional bad practice for demo
     db_name  = "marizaws"
 
     tags = {
